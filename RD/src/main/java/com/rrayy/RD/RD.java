@@ -10,12 +10,10 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class RD extends JavaPlugin implements Listener{
-    public static RD self;
     public Random random;
 
     @Override
     public void onEnable() {
-        self = this;
         getServer().getPluginManager().registerEvents(this, this);
         getLogger().info("random damage plugin이 활성화 되었습니다");
     }
