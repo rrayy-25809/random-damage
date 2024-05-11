@@ -1,0 +1,5 @@
+name: random damage
+version: 0.1
+main: com.rrayy.RD.RD
+api-version: 1.19
+description: 랜덤 대미지 야생 플러그인
