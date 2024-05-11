@@ -1,2 +1,2 @@
-rootProject.name = "random damage"
+rootProject.name = "RD"
 include("RD")
