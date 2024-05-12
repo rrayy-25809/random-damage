@@ -10,7 +10,7 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class RD extends JavaPlugin implements Listener{
-    public Random random;
+    public Random random = new Random();
 
     @Override
     public void onEnable() {
@@ -21,7 +21,7 @@ public class RD extends JavaPlugin implements Listener{
     @EventHandler
     public void onPlayerDamage(EntityDamageEvent e) {
         if (e.getEntity() instanceof Player) {
-            int damage = random.nextInt(35) - 5;
+            int damage = random.nextInt(30);
             e.setDamage(damage);
             Player pl = (Player) e.getEntity();
             pl.sendMessage("방금 "+ChatColor.RED+damage+ChatColor.WHITE+"의 피해를 입으셨습니다");
