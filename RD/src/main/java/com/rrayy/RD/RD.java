@@ -21,7 +21,7 @@ public class RD extends JavaPlugin implements Listener{
     @EventHandler
     public void onPlayerDamage(EntityDamageEvent e) {
         if (e.getEntity() instanceof Player) {
-            int damage = random.nextInt(30);
+            int damage = random.nextInt(18);
             e.setDamage(damage);
             Player pl = (Player) e.getEntity();
             pl.sendMessage("방금 "+ChatColor.RED+damage+ChatColor.WHITE+"의 피해를 입으셨습니다");
