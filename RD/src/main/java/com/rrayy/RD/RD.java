@@ -18,6 +18,7 @@ public class RD extends JavaPlugin implements Listener{
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
+        getServer().requireNonNull(getCommand("kit")).setExecutor(this);
         getLogger().info("random damage plugin이 활성화 되었습니다");
     }
 
