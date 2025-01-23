@@ -15,7 +15,7 @@ dependencies {
 //JUnit Jupiter 사용.
     testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
-    implementation("org.spigotmc:spigot-api:1.21.4-R0.1-SNAPSHOT") //Spigot-API
+    implementation("org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT") //Spigot-API
     //implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 }
 
