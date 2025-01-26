@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "com.rrayy"
-version ="0.2"
+version ="0.3"
 
 repositories {
     // Use Maven Central for resolving dependencies.
